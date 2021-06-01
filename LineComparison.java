@@ -30,6 +30,13 @@ public class LineComparison{
 
 	         Integer lengthOfLine2=  (int) Math.sqrt((Math.pow((X2 - X1) , 2 ) + Math.pow((Y2 - Y1) , 2 )));
 	         System.out.println("The length of line 2 is :  " +lengthOfLine2);
+
+		if (lengthOfLine1.equals(lengthOfLine2)){
+					  System.out.println("Both Lengths are equals");
+				 }
+				 else{
+					  System.out.println(" Lengths are equals");
+				 }
 	}
 }
 
