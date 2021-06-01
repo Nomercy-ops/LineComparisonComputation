@@ -31,12 +31,25 @@ public class LineComparison{
 	         Integer lengthOfLine2=  (int) Math.sqrt((Math.pow((X2 - X1) , 2 ) + Math.pow((Y2 - Y1) , 2 )));
 	         System.out.println("The length of line 2 is :  " +lengthOfLine2);
 
-		if (lengthOfLine1.equals(lengthOfLine2)){
+				if (lengthOfLine1.equals(lengthOfLine2)){
 					  System.out.println("Both Lengths are equals");
 				 }
 				 else{
 					  System.out.println(" Lengths are equals");
 				 }
+
+				 int lengthCheck = lengthOfLine1.compareTo(lengthOfLine2);
+
+				if (lengthCheck == 0) {
+	            		System.out.println("Two lines are equal in length");
+				}
+				else if (lengthOfLine1<lengthOfLine2)
+				{
+	            		System.out.println("Length Of Line2 is greater than Length Of Line 1");
+				}
+				else {
+	        		System.out.println("Length Of Line1 is Lesser than Length Of Line 2");
+				}
 	}
 }
 
